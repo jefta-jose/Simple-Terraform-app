@@ -1,3 +1,5 @@
+#----- the required_providers Block:Ensures Terraform knows which providers to download and their versions.
+
 terraform{
     required_providers {
       docker ={
@@ -6,6 +8,8 @@ terraform{
       }
     }
 }
+
+#------------ the provider Block:Provides the runtime configuration for the provider.
 
 provider "docker" {
   
